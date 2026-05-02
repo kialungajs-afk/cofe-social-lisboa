@@ -206,13 +206,13 @@ export default function App() {
             <FadeUp delay={0.2} className="md:col-span-6 relative z-20 md:pr-10">
               <div className="bg-white/40 backdrop-blur-3xl border border-white/60 p-10 md:p-14 rounded-[3rem] shadow-[0_8px_40px_rgb(0,0,0,0.04)]">
                 <p className="text-coffee-900/80 text-lg md:text-xl leading-[1.8] font-light mb-8">
-                  Situado no centro de Lisboa, o Café Social nasceu da paixão profunda por juntar pessoas à volta da mesa. O nosso espaço foi desenhado para ser a sua segunda casa — seja para um expresso rápido, um brunch tranquilo ou aquele canto perfeito para ler.
+                  Situado em Alcântara, o Café Social nasceu da paixão por fundir a hospitalidade libanesa com o pulsar de Lisboa. O nosso espaço é um refúgio mediterrâneo onde a comida de conforto ganha uma nova alma.
                 </p>
                 <p className="text-coffee-900/80 text-lg md:text-xl leading-[1.8] font-light">
-                  Acreditamos num serviço de café executado com mestria, acompanhado por um menu que cruza a tradição com os clássicos intemporais.
+                  Acreditamos em sabores autênticos — do hummus sedoso aos nossos famosos Social Tacos — servidos num ambiente que convida a ficar, partilhar e socializar.
                 </p>
                 <p className="text-coffee-900 uppercase tracking-[0.3em] text-[10px] font-bold mt-10">
-                  Rua Pinto Ferreira, Lisboa
+                  Rua Pinto Ferreira 32B, Lisboa
                 </p>
               </div>
             </FadeUp>
@@ -249,12 +249,12 @@ export default function App() {
         {/* Carousel / Slider - "Sera para avançar" com Glassmorphism */}
         <div className="flex gap-6 overflow-x-auto hide-scrollbar snap-x snap-mandatory px-6 md:px-[calc((100vw-1280px)/2+24px)] pb-12 pt-4 w-full">
           {[
-            { title: "Café de Especialidade", desc: "Do Espresso duplo ao Latte Tiramisù. Extraído com precisão para destacar as notas puras do grão.", img: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80&w=800" },
-            { title: "Brunch All-Day", desc: "Shakshuka, Tosta Avo-Ovo, e Panquecas Fofas. O conforto puro, perfeitamente servido a qualquer hora.", img: "https://images.unsplash.com/photo-1525351484163-1218861e6056?auto=format&fit=crop&q=80&w=800" },
-            { title: "Para Partilhar", desc: "Húmus estilo libanês, Halloumi frito, Camarão pil-pil e Churros de falafel. Momentos incríveis à mesa.", img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800" },
-            { title: "Pratos Principais", desc: "Frango à Libanesa, Hambúrguer Social ou Caril de Peixe. Sabores intensos para o seu almoço.", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=800" },
-            { title: "Doces & Sobremesas", desc: "Baklava de pistáchio, Cheesecake de abóbora e Tiramisù clássico. O final perfeito ou a pura indulgência.", img: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=800" },
-            { title: "Bebidas & Beers", desc: "Cerveja artesanal na pressão, matcha lattes e cocktails. A transição perfeita para o seu final da tarde.", img: "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&q=80&w=800" }
+            { title: "Social Tacos", desc: "Tacos com carne desfiada, uma fusão irresistível de sabores libaneses e mexicanos.", img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=800" },
+            { title: "Ovos em Labneh", desc: "Ovos perfeitos servidos sobre labneh cremoso (iogurte grego coado). Um clássico do nosso brunch.", img: "https://images.unsplash.com/photo-1525351484163-1218861e6056?auto=format&fit=crop&q=80&w=800" },
+            { title: "Shakshuka", desc: "Ovos escalfados num molho de tomate e pimentos especiado. O coração do brunch mediterrâneo.", img: "https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&q=80&w=800" },
+            { title: "Chicken Waffles", desc: "A combinação perfeita entre o salgado do frango crocante e o doce da waffle artesanal.", img: "https://images.unsplash.com/photo-1524397057410-1e775ed476f3?auto=format&fit=crop&q=80&w=800" },
+            { title: "Hummus Libanês", desc: "Hummus cremoso e autêntico, servido com pão pita quente. Ideal para partilhar.", img: "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&q=80&w=800" },
+            { title: "Cheese Baklava", desc: "Uma sobremesa única e sofisticada, equilibrando o doce e o salgado com massa filo crocante.", img: "https://images.unsplash.com/photo-1519676867240-f031ee043477?auto=format&fit=crop&q=80&w=800" }
           ].map((item, i) => (
             <div key={i} className="snap-center shrink-0 w-[85vw] md:w-[420px] bg-white/40 backdrop-blur-2xl border border-white/60 rounded-[3rem] p-3 shadow-[0_8px_30px_rgb(0,0,0,0.04)] group cursor-pointer hover:bg-white/60 transition-colors duration-500">
               <div className="w-full h-[320px] rounded-[2.5rem] overflow-hidden relative transform-gpu">
