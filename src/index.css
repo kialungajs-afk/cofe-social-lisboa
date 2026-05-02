@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+  
+  /* Café Social Brand Colors: Creams, Warm Neutrals, Terracotta */
+  --color-coffee-900: #262422; /* High contrast almost black */
+  --color-coffee-800: #4A453F;
+  --color-coffee-300: #BDB4A7;
+  --color-coffee-200: #D6CFC4;
+  --color-coffee-100: #EDE8E1;
+  --color-coffee-50: #FAF9F6; /* Extremely soft cream */
+
+  --color-caramel: #DD6E51; /* Vibrant terracotta/orange */
+  --color-caramel-dark: #BF5338; /* Deeper rust */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-coffee-50);
+  color: var(--color-coffee-900);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Custom utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth scrolling - will be managed mostly by Lenis but fallback here */
+html {
+  scroll-behavior: smooth;
+}
